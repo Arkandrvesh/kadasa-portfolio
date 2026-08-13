@@ -14,6 +14,8 @@ const footerServices = [
 
 const footerCompany = [
   { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Pricing", href: "#pricing" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Process", href: "#process" },
   { label: "Contact", href: "#contact" },

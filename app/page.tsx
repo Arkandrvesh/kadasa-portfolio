@@ -3,6 +3,7 @@ import TrustBar from "@/components/sections/TrustBar";
 import SelectedWork from "@/components/sections/SelectedWork";
 import AboutKadasa from "@/components/sections/AboutKadasa";
 import Services from "@/components/sections/Services";
+import PricingSection from "@/components/sections/PricingSection";
 import DigitalSystems from "@/components/sections/DigitalSystems";
 import Industries from "@/components/sections/Industries";
 import WhyKadasa from "@/components/sections/WhyKadasa";
@@ -28,6 +29,9 @@ export default function Home() {
 
       {/* 5. Services */}
       <Services />
+
+      {/* 5.5 Pricing */}
+      <PricingSection />
 
       {/* 6. From Websites to Digital Systems */}
       <DigitalSystems />

@@ -13,9 +13,8 @@ export const siteConfig = {
   url: "https://kadasa.tech",
 
   // ─── Contact ───────────────────────────────────────────────
-  // Replace with real number when available (without leading +)
-  whatsappNumber: "62XXXXXXXXXXX",
-  email: "hello@kadasa.tech",
+  whatsappNumber: "6281291123534",
+  email: "kadasatech.ofc@gmail.com",
 
   // ─── Social ────────────────────────────────────────────────
   social: {

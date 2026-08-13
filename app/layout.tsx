@@ -1,10 +1,17 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
+
+export const viewport: Viewport = {
+  themeColor: "#0A1628",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],

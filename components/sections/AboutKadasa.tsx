@@ -110,7 +110,11 @@ export default function AboutKadasa() {
                       src={member.image}
                       alt={`${member.name} - ${member.role}`}
                       fill
-                      className="object-cover"
+                      className={`object-cover ${
+                        member.name === "Saddam" || member.name === "Azka"
+                          ? "object-top"
+                          : "object-center"
+                      }`}
                     />
                   </div>
 
