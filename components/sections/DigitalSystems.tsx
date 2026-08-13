@@ -37,16 +37,6 @@ const levels = [
       { name: "SMAN 11 Library", cat: "Digital Library" },
     ],
   },
-  {
-    level: "04",
-    title: "Enterprise System",
-    color: "#a78bfa",
-    bg: "rgba(139,92,246,0.1)",
-    border: "rgba(139,92,246,0.25)",
-    items: [
-      { name: "SI-DINAMIS", cat: "Government / Internal System" },
-    ],
-  },
 ];
 
 export default function DigitalSystems() {
@@ -82,7 +72,7 @@ export default function DigitalSystems() {
         </div>
 
         {/* Levels */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {levels.map((level, i) => (
             <div key={level.level} className="relative">
               {/* Arrow connector (desktop) */}

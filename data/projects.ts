@@ -33,6 +33,7 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  /*
   {
     slug: "si-dinamis",
     title: "SI-DINAMIS",
@@ -69,6 +70,7 @@ export const projects: Project[] = [
     badge: "Enterprise System",
     industry: "Government / Institutional",
   },
+  */
   {
     slug: "akazapos",
     title: "AkazaPOS",

@@ -76,10 +76,33 @@ export default function ContactSection() {
     if (!validate()) return;
 
     setLoading(true);
-    // Simulate async submission
-    await new Promise((resolve) => setTimeout(resolve, 1200));
+
+    // Format message for WhatsApp
+    const waNumber = siteConfig.whatsappNumber; 
+    const text = `Halo KADASA, saya tertarik untuk diskusi mengenai project:
+    
+*Nama:* ${formData.name}
+*Email:* ${formData.email}
+*Perusahaan:* ${formData.company || "-"}
+*Tipe Project:* ${formData.projectType || "-"}
+*Estimasi Budget:* ${formData.budget || "-"}
+
+*Pesan/Detail:*
+${formData.message}
+
+Terima kasih.`;
+
+    const encodedText = encodeURIComponent(text);
+    const waUrl = `https://wa.me/${waNumber}?text=${encodedText}`;
+
+    // Simulate small delay for UX
+    await new Promise((resolve) => setTimeout(resolve, 800));
+    
     setLoading(false);
     setSubmitted(true);
+
+    // Open WhatsApp in new tab
+    window.open(waUrl, "_blank");
   };
 
   return (
