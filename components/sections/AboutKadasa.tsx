@@ -1,4 +1,5 @@
 import { team } from "@/data/team";
+import Image from "next/image";
 
 export default function AboutKadasa() {
   return (
@@ -103,18 +104,14 @@ export default function AboutKadasa() {
                     {member.number}
                   </div>
 
-                  {/* Avatar placeholder */}
-                  <div
-                    className="w-12 h-12 rounded-full mb-3 flex items-center justify-center text-lg font-bold"
-                    style={{
-                      background: "linear-gradient(135deg, rgba(59,130,246,0.2) 0%, rgba(6,182,212,0.2) 100%)",
-                      border: "1px solid rgba(59,130,246,0.2)",
-                      color: "rgba(96,165,250,0.8)",
-                      fontFamily: "var(--font-space-grotesk)",
-                    }}
-                    aria-hidden="true"
-                  >
-                    {member.number}
+                  {/* Avatar Image */}
+                  <div className="relative w-16 h-16 rounded-full mb-4 overflow-hidden border border-[rgba(255,255,255,0.1)]">
+                    <Image
+                      src={member.image}
+                      alt={`${member.name} - ${member.role}`}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
 
                   <h3

@@ -6,43 +6,43 @@
 export interface TeamMember {
   id: string;
   number: string;
-  name: string; // Replace with actual name
-  role: string; // Replace with actual role
+  name: string;
+  role: string;
   focus: string[];
-  placeholder: boolean; // true = using placeholder data
+  image: string;
 }
 
 export const team: TeamMember[] = [
   {
     id: "founder-01",
     number: "01",
-    name: "Founder 01",
-    role: "Role — TBD",
-    focus: ["Strategy", "Business", "Vision"],
-    placeholder: true,
+    name: "Deva",
+    role: "Web Developer",
+    focus: ["Frontend", "UI Engineering", "React"],
+    image: "/team/Deva.jpeg",
   },
   {
     id: "founder-02",
     number: "02",
-    name: "Founder 02",
-    role: "Role — TBD",
+    name: "Arkan",
+    role: "Web Developer",
     focus: ["Development", "Architecture", "Backend"],
-    placeholder: true,
+    image: "/team/Arkan.jpeg",
   },
   {
     id: "founder-03",
     number: "03",
-    name: "Founder 03",
-    role: "Role — TBD",
-    focus: ["Frontend", "UI Engineering", "React"],
-    placeholder: true,
+    name: "Azka",
+    role: "Marketing Communication",
+    focus: ["Communication", "Brand Strategy", "PR"],
+    image: "/team/Azka.jpeg",
   },
   {
     id: "founder-04",
     number: "04",
-    name: "Founder 04",
-    role: "Role — TBD",
-    focus: ["Design", "UX", "Brand"],
-    placeholder: true,
+    name: "Saddam",
+    role: "Marketing",
+    focus: ["Growth", "Sales", "Business"],
+    image: "/team/Saddam.jpeg",
   },
 ];
