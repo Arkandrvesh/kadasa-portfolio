@@ -99,13 +99,7 @@ export default function DigitalSystems() {
                 className="p-5 rounded-xl h-full transition-all duration-300 hover:-translate-y-1"
                 style={{ background: level.bg, border: `1px solid ${level.border}` }}
               >
-                {/* Level badge */}
-                <div
-                  className="text-[10px] font-bold tracking-widest uppercase mb-2"
-                  style={{ color: level.color, fontFamily: "var(--font-space-grotesk)" }}
-                >
-                  LEVEL {level.level}
-                </div>
+                {/* Level badge removed per user request */}
 
                 <h3
                   className="text-base font-bold text-white mb-4"
